@@ -16,5 +16,13 @@ namespace TodoListApp_Manager
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string newTask = txtTitle.Text;
+            // Add new task to your task list (e.g., a ListBox or List)
+            lstTaskManager.Items.Add(newTask);
+            txtTitle.Clear();
+        }
     }
 }
